@@ -12,28 +12,53 @@
     display: table;
 }
 
-.relative{
+/* molte class solo una funzione */
+
+.relative {
     position: relative;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-.width-percent{
+.width-percent {
     width: 100%;
+}
+
+.float {
+    float: left;
+}
+
+.border-radius{
+    border-radius: 20px;
+}
+
+/* opacità delle immagini */
+
+.screen-opacity{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.total-img{
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-opacity{
+    top: 0;
+    width: 100%;
+    height: 40%;
 }
 
 /* inizio del layout */
 
 .container {
-    width: 80%;
-    height: 650px;
+    width: 70%;
+    height: 750px;
     margin: 0 auto;
-}
-
-.float {
-    float: left;
 }
 
 /* margine sotto ai vari tag */
@@ -45,18 +70,17 @@
 /* header figlio di container */
 
 .container > header {
-    width: 100%;
     height: 10%;
 }
 
-header > img{
+header>img {
     height: 60%;
     padding-right: 5%;
     object-fit: contain;
     border-right: 1px solid;
 }
 
-ul > li{
+ul>li {
     font-size: small;
     display: inline-block;
     padding: 10px 5px 0 0;
@@ -64,28 +88,22 @@ ul > li{
     color: rgb(170, 169, 169);
 }
 
-header > nav {
-    height:calc(20% - 20px);
+header>nav {
+    height: calc(20% - 20px);
 }
 
 /* immagine principale con le scritte all'interno */
 
-div.principal-img{
+div.principal-img {
     height: 40%;
-/*  background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../img/banner.jpg); */
 }
 
-div.principal-img > img{
+div.principal-img img {
     height: 100%;
     object-fit: cover;
-/*  background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); */
 }
 
-div.principal-img > div.absolute{
+div.principal-img  div.principal-text {
     bottom: 10%;
     color: white;
     padding: 0 40% 0 5%;
@@ -99,11 +117,11 @@ main {
 
 /* header figlio del main */
 
-main > header {
+main>header {
     height: 15%;
 }
 
-p{
+p {
     font-size: small;
 }
 
@@ -114,10 +132,9 @@ p{
     height: calc(80% - 40px);
 }
 
-section img{
+section img {
     height: 40%;
     object-fit: cover;
-    border-radius: 20px;
 }
 
 /* parte centrale del main */
@@ -135,6 +152,6 @@ footer {
     text-align: center;
 }
 
-footer span{
+footer span {
     color: red;
 }
