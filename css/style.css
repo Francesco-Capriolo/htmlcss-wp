@@ -8,8 +8,16 @@
 
 .clearfix::after {
     content: "";
-    display: table;
     clear: both;
+    display: table;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
 }
 
 /* inizio del layout */
@@ -35,35 +43,51 @@
 .container > header {
     width: 100%;
     height: 10%;
-/*     background-color: rgba(229, 121, 230, 255);
-    background-image: url(../img/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain; */
 }
+
 header > img{
-    object-fit: contain;
     height: 60%;
     padding-right: 5%;
+    object-fit: contain;
     border-right: 1px solid;
-}
-nav{
-
 }
 
 ul > li{
-    padding: 10px 5px 0 0;
     font-size: small;
-    color: rgb(170, 169, 169);
     display: inline-block;
+    padding: 10px 5px 0 0;
     text-transform: uppercase;
+    color: rgb(170, 169, 169);
 }
 
-/* collo del contenitore */
-
-nav {
+header > nav {
     width: 100%;
     height:calc(20% - 20px);
-    background-color: rgba(225, 214, 122, 255);
+}
+
+/* immagine principale con le scritte all'interno */
+
+div.principal-img{
+    width: 100%;
+    height: 40%;
+/*     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/banner.jpg); */
+}
+
+div.principal-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+/*     background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); */
+}
+
+div.principal-img > div.absolute{
+    bottom: 10%;
+    color: white;
+    padding: 0 40% 0 5%;
 }
 
 /* corpo del contenitore */
