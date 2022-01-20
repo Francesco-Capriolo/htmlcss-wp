@@ -1,0 +1,211 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* molte class solo una funzione */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.width-percent {
+    width: 100%;
+}
+
+.float {
+    float: left;
+}
+
+.border-radius {
+    border-radius: 20px;
+}
+
+/* opacità delle immagini */
+
+.screen-opacity {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.total-img {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-opacity {
+    top: 0;
+    width: 100%;
+    height: 40%;
+}
+
+/* inizio del layout */
+
+.container {
+    width: 70%;
+    height: 750px;
+    margin: 0 auto;
+}
+
+/* margine sotto ai vari tag */
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* header figlio di container */
+
+.container > header {
+    height: 10%;
+}
+
+header > img {
+    height: 60%;
+    padding-right: 5%;
+    object-fit: contain;
+    border-right: 1px solid;
+}
+
+ul>li {
+    font-size: small;
+    display: inline-block;
+    padding: 10px 5px 0 0;
+    text-transform: uppercase;
+    color: rgb(170, 169, 169);
+}
+
+header>nav {
+    height: calc(20% - 20px);
+}
+
+/* immagine principale con le scritte all'interno */
+
+div.principal-img {
+    height: 40%;
+}
+
+div.principal-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+div.principal-img div.principal-text {
+    bottom: 10%;
+    color: white;
+    padding: 0 40% 0 5%;
+}
+
+/* corpo del contenitore */
+
+main {
+    height: 55%;
+}
+
+/* header figlio del main */
+
+main>header {
+    height: 15%;
+}
+
+p {
+    font-size: small;
+}
+
+/* parti laterali */
+
+.lateral-section {
+    width: calc((45% / 2) - 10px);
+    height: calc(80% - 40px);
+}
+
+section img {
+    height: 40%;
+    object-fit: cover;
+}
+
+/* parte centrale del main */
+
+.section-central {
+    width: 55%;
+    height: calc(80% - 40px);
+    margin: 0 10px;
+}
+
+/* piede del contenitore */
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer span {
+    color: red;
+}
+
+/* bonus con hover */
+
+ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul li a:hover{
+    transition-duration: 0.5s;
+    color: blue;
+    text-decoration: underline;
+    text-decoration-style: double;
+    
+}
+
+ul li a:focus{
+    color: red;
+    text-overflow: ellipsis;
+}
+
+div.principal-img:hover img{
+    display: none;
+}
+
+div.principal-img:hover{
+    background-image: url(../img/img-6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section.lateral-section:hover div{
+    display: none;
+}
+
+div.img-opacity:hover{
+    transition-duration: 1s;
+    background-image: url(../img/img-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2:hover, h5:hover{
+    transition: color , 2s;
+    font-size: xx-large;
+    color: coral;
+}
+
+p:hover{
+    transition: color, 0.5s;
+    color: cornflowerblue;
+    font-size: 0.9rem;
+}
